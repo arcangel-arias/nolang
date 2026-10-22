@@ -1,0 +1,11 @@
+[Unit]
+Description=Puente TCP a socket de mpv
+After=network.target
+
+[Service]
+User=pi
+ExecStart=/usr/bin/socat TCP-LISTEN:5000,reuseaddr,fork UNIX-CONNECT:/tmp/mpvsocket
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

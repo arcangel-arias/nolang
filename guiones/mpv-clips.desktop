@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=mpv clips
+Exec=mpv --fs --no-terminal --no-osc --cursor-autohide=always --shuffle --loop-playlist=inf --input-ipc-server=/tmp/mpvsocket /home/pi/clips

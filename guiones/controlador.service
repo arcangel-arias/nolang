@@ -1,0 +1,11 @@
+[Unit]
+Description=Controlador aleatorio de mpv
+After=network.target
+
+[Service]
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/controlador.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
